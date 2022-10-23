@@ -23,3 +23,22 @@ where
 
 - Trait bounds to conditional Implement methods -> Example conditional_trait_bound()
 
+## Lifetime
+Life time ensure that referrences are valid as long as we need them to be. Most of the time, lifetimes are implicit and inferred, just like most of the time, types are inferred.
+
+### How the compile handle lifetime!
+
+```
+fn main() {
+    let r;                // ---------+-- 'a
+                          //          |
+    {                     //          |
+        let x = 5;        // -+-- 'b  |
+        r = &x;           //  |       |
+    }                     // -+       |
+                          //          |
+    println!("r: {}", r); //          |
+}                         // ---------+
+
+```
+Here, we’ve annotated the lifetime of r with 'a and the lifetime of x with 'b. As you can see, the inner 'b block is much smaller than the outer 'a lifetime block. At compile time, Rust compares the size of the two lifetimes and sees that r has a lifetime of 'a but that it refers to memory with a lifetime of 'b. The program is rejected because 'b is shorter than 'a: the subject of the reference doesn’t live as long as the reference.
