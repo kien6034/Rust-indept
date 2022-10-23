@@ -1,3 +1,7 @@
+pub mod smart_pointers;
+
 fn main() {
-    println!("Hello, world!");
+    //smart_pointers::smart_pointer::run();
+    smart_pointers::dereferrence::run();
 }
+
