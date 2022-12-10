@@ -1,4 +1,4 @@
-use std::{fmt::Debug, iter::Sum};
+use std::{fmt::Debug};
 
 pub fn run(){
     summarize();
@@ -145,7 +145,7 @@ impl<T: Display + PartialOrd> Pair<T> {
         }
     }
 }
-
+#[allow(dead_code)]
 struct PersonalInfo {
     name: String,
     age: i32

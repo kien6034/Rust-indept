@@ -36,3 +36,8 @@ Dereferrence is the process of getting the value whose the pointer is pointing t
 - my_smart_counter: Create a custom smart counter which implemetns the DeRef trait 
 - deref_coercion: Deref coercion converts a reference to a type that implements the Deref trait into a reference to another type
 - DerefMut: 15.2 - How Deref Coercion Interacts with Mutability
+
+
+## Referrence Counted Smart Counter 
+There are cases when a single value might have multiple owners: For example, in graph data structures, multiple edges might point to the same node, 
+and that node is conceptually owned by all of the edges that points to it 
