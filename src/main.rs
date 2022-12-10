@@ -9,6 +9,7 @@ fn main() {
     //generic_trait_lifetime::generic::run();
     //generic_trait_lifetime::trait_example::run();
     //generic_trait_lifetime::lifetime::run();
-    types::phantomdata::run();
+    //types::phantomdata::run();
+    types::typed_key_pattern::run();
 }
 
