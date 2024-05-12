@@ -7,9 +7,8 @@ fn main() {
     //smart_pointers::dereferrence::run();
     //smart_pointers::rc::run();
     //generic_trait_lifetime::generic::run();
-    //generic_trait_lifetime::trait_example::run();
+    generic_trait_lifetime::trait_example::run();
     //generic_trait_lifetime::lifetime::run();
     //types::phantomdata::run();
-    types::typed_key_pattern::run();
+    //types::typed_key_pattern::run();
 }
-
