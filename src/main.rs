@@ -2,6 +2,7 @@ pub mod smart_pointers;
 pub mod generic_trait_lifetime;
 pub mod types;
 pub mod macros;
+pub mod future;
 
 fn main() {
     //smart_pointers::smart_pointer::run();
