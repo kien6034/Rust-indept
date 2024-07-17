@@ -1,0 +1,11 @@
+workspace = { members = ["my-app-macros"] }
+
+
+[package]
+name = "my-app"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+my-app-macros = { path = "./my-app-macros" }
