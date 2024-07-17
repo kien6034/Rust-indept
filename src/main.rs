@@ -1,6 +1,8 @@
 pub mod smart_pointers;
 pub mod generic_trait_lifetime;
 pub mod types;
+pub mod macros;
+pub mod future;
 
 fn main() {
     //smart_pointers::smart_pointer::run();
@@ -10,6 +12,7 @@ fn main() {
     //generic_trait_lifetime::trait_example::run();
     //generic_trait_lifetime::lifetime::run();
     //types::phantomdata::run();
-    types::typed_key_pattern::run();
-}
+    //types::typed_key_pattern::run();
 
+    macros::declarative_macros::run();
+}
